@@ -37,6 +37,8 @@
                 (dragEnd)="markerDragEnd(m, $event)">
                 <sebm-google-map-info-window>
                   <strong>{{m.name}}</strong>
+                  <br />
+                  <a class="delete" (click)="removeMarker(m)">Delete</a>
                 </sebm-google-map-info-window>
               </sebm-google-map-marker>
             </sebm-google-map>
